@@ -14,13 +14,39 @@ src/
     CityLayout.lua          Raster-Mathematik der Stadt (Server + Client)
   server/   -> ServerScriptService.Server
     Main.server.lua         Startet Services (Init -> Start)
-    Services/               WorldService, MapService, TrafficLightService
+    Services/               WorldService, MapService, TrafficLightService, VehicleService
+    Vehicles/               ScooterBuilder (Kukurin-E-Scooter aus Parts)
     Map/                    Map-Builder (Straßen, Blöcke, Landmarken, Ampeln)
   client/   -> StarterPlayerScripts.Client
     Main.client.lua         Startet Controller
-    Controllers/            DistrictController (Stadtteil-Anzeige)
+    Controllers/            VehicleController (Fahrphysik), CameraController,
+                            HudController, DistrictController
+    UI/UiKit.lua            UI-Helfer im Markenlook
 ServerStorage.Assets        Ordner für spätere Mesh-Models (siehe unten)
 ```
+
+## Steuerung (Kukurin E-Scooter)
+
+| Aktion | Tastatur | Gamepad | Handy |
+|---|---|---|---|
+| Gas / Bremsen / Lenken | WASD oder Pfeiltasten | linker Stick, R2/L2 | Thumbstick |
+| Handbremse (Drift) | Leertaste | X | BREMSE (halten) |
+| Hupe | H | Y | HUPE |
+| Nitro (Modelle mit Nitro) | Shift links | B | NITRO |
+| Aufsteigen | E (am Scooter) | Y | antippen |
+| Absteigen | F | A | AB |
+| Kukurin rufen | R | – | Knopf unten |
+
+## Marke & Look
+
+Kukurin ist eine **eigene, ausgedachte Cartoon-Marke**. Damit es keinen
+Ärger mit Markenrechten oder der Roblox-Moderation gibt:
+
+- **keine** Logos, Schriftzüge oder Modellnamen echter E-Scooter-Hersteller
+- **kein** Orange-Schwarz-Farbschema, das an echte Roller erinnert
+- Markenfarben nur aus `Config.Brand`: Türkis, Pink, Sonnengelb, Dunkelblau
+- Markenzeichen ist das **Kukurin-Gesicht** (Scheinwerfer-Augen + Grinsen vorne am Lenker)
+- Fotos echter Roller nicht als Texturen/Decals verwenden
 
 ## Einrichtung (einmalig)
 
@@ -59,4 +85,5 @@ Bodenmittelpunkt, die Vorderseite zeigt nach -Z.
 | `Warehouse` | Lagerhallen |
 | `Tree` | Bäume |
 | `Ramp` | Stunt-Rampen |
+| `Scooter_<ModelId>` (z. B. `Scooter_Classic`) | Optik eines Kukurin; ein Part namens `Seat` darin markiert die Sitzposition |
 | `Landmark_Spawn`, `Landmark_Dealer`, `Landmark_RepairShop`, `Landmark_Police` | komplette Landmarken |

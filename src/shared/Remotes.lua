@@ -33,6 +33,7 @@ local DEFINITIONS = {
 	-- Phase 2: Fahrzeug
 	RequestSpawnVehicle = "RemoteEvent", -- C->S: "Ich möchte mein Auto"
 	Honk = "RemoteEvent", -- C->S: Hupe (KI weicht aus, Phase 4)
+	UseNitro = "RemoteEvent", -- C->S: Nitro zünden (Server prüft Ladungen)
 
 	-- Phase 3/4: Chaos
 	ChaosPopup = "RemoteEvent", -- S->C: "CRASH! +50"

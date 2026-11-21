@@ -13,6 +13,9 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Config"))
 
 local CONTROLLER_ORDER = {
+	"VehicleController",
+	"CameraController",
+	"HudController",
 	"DistrictController",
 }
 

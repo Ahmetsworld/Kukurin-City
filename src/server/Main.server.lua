@@ -21,6 +21,7 @@ local SERVICE_ORDER = {
 	"WorldService",
 	"MapService",
 	"TrafficLightService",
+	"VehicleService",
 }
 
 print(("[Kukurin City] Server startet – %s"):format(Config.Version))
