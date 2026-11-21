@@ -1,0 +1,9 @@
+# Gebaute Place-Dateien (werden aus dem Code erzeugt)
+*.rbxl
+*.rbxlx
+*.rbxl.lock
+*.rbxlx.lock
+
+# Tooling
+sourcemap.json
+.DS_Store

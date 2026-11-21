@@ -1,0 +1,5 @@
+# Tool-Versionen für Aftman (https://github.com/LPGhatguy/aftman)
+# Installation: `aftman install` im Projektordner.
+# WICHTIG: Das Rojo-Plugin in Studio muss dieselbe Hauptversion (7.4.x) haben.
+[tools]
+rojo = "rojo-rbx/rojo@7.4.4"
